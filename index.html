@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>NeighborhoodMap</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script
+  </head>
+  <body>
+    <div id="header">
+      <h1>Best Temples to Visit</h1>
+      <p>These are some Best places to Visit and get  some holy and Sacredness.</p>
+    </div>
+    <div id="locList">
+			<h3>Locations:</h3>
+			<form data-bind="submit: search">
+				<input type="text" data-bind="value: userLoc" id="userLoc" autofocus="on" autocomplete="on" placeholder="Enter keyword">
+				<button type="submit">Search</button>
+				<button type="button" data-bind="event: { click: $root.showAll }">Show All</button>
+			</form>
+			<ul class="d-list" data-bind="foreach: markersArray">
+				<li data-bind="style: { display: $data.display ? 'list-item' : 'none'}"><span data-bind="text: $data.title, event: { click: $parent.openInfoWindow }"></span></li>
+			</ul>
+		</div>
+
+    <div id="map"></div>
+
+    <script src="js/main.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDl3XGFtZSABlOWHAwfUav45p-en7Y77tQ&v=3&callback=initMap&libraries=places" onerror="googleError()">
+    </script>
+
+  	</body>
+  </html>

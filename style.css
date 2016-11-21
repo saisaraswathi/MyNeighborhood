@@ -1,0 +1,11 @@
+html, body {
+  font-family: Arial, sans-serif;
+  background-color: #00bfff;
+  color: #fff5ee;
+  height: 100%;
+  margin: 0;
+  padding: 0;}
+#header {padding: 20px;}
+#locList {padding: 0 0 10px 20px;}
+#map {height: 100%}
+.infowindow-content {color: #808080;}
