@@ -2,7 +2,7 @@
 
 This is the final project of the Udacity FEND Nanodegree. The challenge is to build a functional neighborhood map, using Google Map API, plus another API of my choice. For this project I chose to use Flickr API to attach images to the selected locations on the map.
 My map is a guide to find a place where you can meet and catch up with friends over coffee, or grab delicious finds a some amazing brunch spots in Los Angeles. Click on one of the markers on the map for a sneak peak of what to find at these locations.
- ## Getting Started
+## Getting Started
  Here is a live [demo]()
 
 #### APIs Used:
@@ -18,7 +18,7 @@ My map is a guide to find a place where you can meet and catch up with friends o
  * You can also filter locations by name using the Search box. Clicking on the `Show All` button will render all the markers back on the map, and all locations will be listed.
 
 ## Building the app
-1. Download the Knockout framework. Knockout is used to handle the list, filter, and any other information on the page that is subject to changing state. Things that should not be handled by Knockout: anything the Maps API is used for, creating markers, tracking click events on markers, making the map, refreshing the map. Note 1: Tracking click events on list items should be handled with Knockout. Note 2: Creating your markers as a part of your ViewModel is allowed (and recommended). Creating them as Knockout observables is not.
+1. Download the [Knockout](http://knockoutjs.com/) framework. Knockout is used to handle the list, filter, and any other information on the page that is subject to changing state. Things that should not be handled by Knockout: anything the Maps API is used for, creating markers, tracking click events on markers, making the map, refreshing the map. Note 1: Tracking click events on list items should be handled with Knockout. Note 2: Creating your markers as a part of your ViewModel is allowed (and recommended). Creating them as Knockout observables is not.
 2. Asynchrony and Error Handling. All data APIs used in the project  load asynchronously and errors are handled gracefully.
 3.  Added the code required to add a full-screen map to your page using the Google Maps API. For sake of efficiency, the map API should be called only once.
 4. Added the code required to display map markers identifying 6 location interested in within neighborhood. App displays those locations by default when the page is loaded.
