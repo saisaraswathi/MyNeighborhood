@@ -3,7 +3,10 @@
 This is the final project of the Udacity FEND Nanodegree. The challenge is to build a functional neighborhood map, using Google Map API, plus another API of my choice. For this project I chose to use Flickr API to attach images to the selected locations on the map.
 My map is a guide to find a place where you can meet and catch up with friends over coffee, or grab delicious finds a some amazing brunch spots in Los Angeles. Click on one of the markers on the map for a sneak peak of what to find at these locations.
 ## Getting Started
- Here is a live [demo](https://saisaraswathi.github.io/MyNeighborhood/)
+1. Download or clone the repo from this [link](https://github.com/saisaraswathi/MyNeighborhood).
+2. Double click on the index.html file so that it will open in your browser.
+You need to have a working internet connection for the app to work because it draws information from Google Maps and Flickr.
+3. Here is a live [demo](https://saisaraswathi.github.io/MyNeighborhood/) , just click on this so that you can see my App .
 
 #### APIs Used:
 1. [Google Maps](https://developers.google.com/maps/?authuser=1)
